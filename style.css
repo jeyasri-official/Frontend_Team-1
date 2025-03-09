@@ -58,17 +58,21 @@ body {
 
 /* Hamburger */
 
-@media (min-width: 515px) {
+@media (min-width: 455px) {
     .hamburger,.contentDisplay{
         display: none;
     }
  }
 
- @media (max-width: 515px) {
+ @media (max-width: 455px) {
     .smallscreen{
         display: none;
     }
+    .search-container{
+        flex-grow: 2;
+    }
     .hamburger{
+        display: block;
         background-color: transparent;
         border: none;
     }
@@ -82,7 +86,7 @@ body {
     
     #target.show {
         visibility: visible; /* Makes it visible when expanded */
-        max-height: 500px; /* Adjust this height if needed */
+        max-height: 500px; 
     }
     
  }
@@ -160,12 +164,14 @@ body {
     background-color: var(--white);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 650px) {
    .foot{
     display: flex;
     flex-wrap: wrap;
     justify-content: end;
     margin: 40px;
+    margin-left: 70px;
+    padding-left: 80px;
    }
 }
 .footerItem{
