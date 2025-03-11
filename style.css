@@ -5,6 +5,7 @@
     --shade2 : #b4e639;
     --shade3 : #89bf2c;
     --shade4 : #2f6b1a;
+
 }
 body {
     font-family: 'Montserrat', sans-serif;
@@ -58,17 +59,23 @@ body {
 
 /* Hamburger */
 
-@media (min-width: 515px) {
+@media (min-width: 472px) {
     .hamburger,.contentDisplay{
         display: none;
     }
  }
 
- @media (max-width: 515px) {
+
+
+@media (max-width: 472px) {
     .smallscreen{
         display: none;
     }
+    .search-container{
+        flex-grow: 2;
+    }
     .hamburger{
+        display: block;
         background-color: transparent;
         border: none;
     }
@@ -160,12 +167,17 @@ body {
     background-color: var(--white);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 715px) {
    .foot{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: end;
+    flex-direction: column;
     margin: 40px;
+   }
+   .footerItem{
+    margin-right: 10px;
+   }
+   .follow{
+    margin: 0 15px
    }
 }
 .footerItem{
