@@ -58,13 +58,13 @@ body {
 
 /* Hamburger */
 
-@media (min-width: 515px) {
+@media (min-width: 472px) {
     .hamburger,.contentDisplay{
         display: none;
     }
  }
 
- @media (max-width: 515px) {
+ @media (max-width: 472px) {
     .smallscreen{
         display: none;
     }
